@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Заедно през вековете</title>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fde9b8;--hd:#3b2a1a;--g:#2e9d5b;--r:#d9423a;--y:#f5b82e;--ink:#3b2a1a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#22304f;--hd:#fff1cf}}
+:root[data-theme="dark"]{--bg:#22304f;--hd:#fff1cf}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;background:var(--bg);color:var(--hd);font-family:'Comfortaa','Trebuchet MS',Arial,sans-serif;font-weight:700}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+header{display:flex;justify-content:space-between;align-items:center;max-width:580px;margin:0 auto;padding:10px 14px;font-size:15px}
+#pr span{display:inline-block;width:14px;height:14px;border-radius:50%;background:#0003;margin-right:4px}
+#pr span.d{background:var(--g)}#pr span.c{outline:3px solid var(--y)}
+.stars{font-size:20px}
+main{max-width:580px;margin:0 auto;padding:0 12px 28px}
+.page{background:#fffaf0;color:var(--ink);border-radius:8px 28px 28px 8px;border-left:16px solid #b3541e;box-shadow:0 8px 0 #0003,0 0 0 4px #e8c98a inset;padding:22px 18px;text-align:center;animation:fl .5s}
+@keyframes fl{from{opacity:0;transform:translateX(30px) rotateY(-25deg)}to{opacity:1;transform:none}}
+.flag{height:14px;border-radius:7px;background:linear-gradient(#fff 33%,var(--g) 33% 66%,var(--r) 66%);border:2px solid #0002;margin:6px 30px}
+h1{font-size:34px;margin:10px 0 4px;color:var(--r);line-height:1.1}
+h2{font-size:26px;margin:4px 0}
+p{font-size:18px;line-height:1.45;margin:8px 0}
+.big{font-size:84px;line-height:1.1;animation:bob 2s infinite}
+@keyframes bob{50%{transform:translateY(-8px) rotate(3deg)}}
+.yr{display:inline-block;background:var(--y);padding:6px 18px;border-radius:20px;font-size:22px}
+.btn{font:inherit;font-size:22px;min-height:58px;padding:10px 26px;border:0;border-radius:30px;background:var(--g);color:#fff;box-shadow:0 6px 0 #1b6b3b;cursor:pointer;margin:8px 4px}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 #1b6b3b}
+.btn.sm{font-size:16px;min-height:44px;background:#3b82c4;box-shadow:0 5px 0 #2a5f94}
+.btn.rd{background:var(--r);box-shadow:0 6px 0 #962b25}
+.task{background:#fff0c4;border-radius:18px;padding:10px;font-size:18px;margin:12px 0}
+.q{font-size:40px;margin:8px 0;word-break:break-all}.eq{font-size:44px;margin:8px 0}
+.opts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.opt{font:inherit;font-size:34px;width:78px;height:78px;border-radius:22px;border:4px solid #b3541e;background:#fff;color:var(--ink);cursor:pointer;box-shadow:0 5px 0 #b3541e}
+.opt.ok{background:#8fe3a8;border-color:var(--g)}.opt.no,.no{animation:sk .4s;background:#ffb3ad}
+@keyframes sk{25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+.dots{font-size:22px;color:var(--g);margin-top:10px}
+.slots{display:flex;gap:6px;justify-content:center;margin:10px 0}
+.slot{width:46px;height:56px;border:3px dashed #b3541e;border-radius:12px;font-size:32px;line-height:50px}.slot.ok{background:#8fe3a8;border:3px solid var(--g)}
+svg{width:100%;max-width:360px;background:#fff7e0;border-radius:20px;border:3px solid #e8c98a;touch-action:manipulation}
+.nx{animation:pu 1s infinite;transform-origin:center;transform-box:fill-box}@keyframes pu{50%{transform:scale(1.35)}}
+.mz{display:grid;width:min(100%,320px);aspect-ratio:1;margin:8px auto;background:#fff7e0;border-radius:6px}
+.mz div{font-size:min(7vw,28px);display:flex;align-items:center;justify-content:center;border:0 solid #7a3d14}
+.pad{display:grid;grid-template-columns:repeat(3,64px);gap:6px;justify-content:center}
+.pad button{height:56px;font-size:26px;border-radius:16px;border:3px solid #b3541e;background:#fff;cursor:pointer}
+.tn{position:relative;height:190px;border-radius:20px;overflow:hidden;background:repeating-linear-gradient(90deg,#5a4634 0 28px,#4a3a2a 28px 30px);border:4px solid #3b2a1a;box-shadow:inset 0 0 40px #000b;touch-action:manipulation}
+.tn .ln{position:absolute;left:0;right:0;height:33.33%;border-bottom:2px dashed #fff3}.tn .ln:nth-child(1){top:0}.tn .ln:nth-child(2){top:33.33%}.tn .ln:nth-child(3){top:66.66%}
+.it,.pl{position:absolute;height:33.33%;display:flex;align-items:center;font-size:34px;transition:top .15s}
+.pl{left:8%;font-size:40px}
+#win{margin-top:12px;font-size:26px;animation:fl .5s}
+.cert{border:5px double var(--y);border-radius:20px;padding:14px;margin:12px 0}
+.fact{background:#e6f6ea;border-radius:16px;padding:10px;font-size:17px;margin:10px 0;color:#1b4d2e}
+</style>
+</head>
+<body>
+<header><div id="pr"></div><div class="stars">⭐ <span id="st">0</span></div></header>
+<main id="main"></main>
+<script>
+const $=(s,e=document)=>e.querySelector(s),R=n=>Math.floor(Math.random()*n),
+sh=a=>a.map(x=>[Math.random(),x]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
+let p=0,stars=0,tm=null,dn={};
+let VO=null;const pick=()=>{try{VO=speechSynthesis.getVoices().find(v=>/^bg/i.test(v.lang))||null}catch(e){}};
+try{speechSynthesis.onvoiceschanged=pick;pick()}catch(e){}
+const say=t=>{try{const S=speechSynthesis;S.cancel();setTimeout(()=>{pick();const n=$('#vn');if(n)n.hidden=!(S.getVoices().length&&!VO);S.resume();t.split(/(?<=[.!?])\s+/).forEach(x=>{const u=new SpeechSynthesisUtterance(x);u.lang='bg-BG';u.rate=.85;if(VO)u.voice=VO;S.speak(u)})},100)}catch(e){}};
+let sp=0,VB=null,U=[],fbk=0;
+const pickV=()=>{try{const v=speechSynthesis.getVoices();VB=v.find(x=>/^bg/i.test(x.lang))||v.find(x=>/^ru/i.test(x.lang))||null;return v.length}catch(e){return 0}};
+try{speechSynthesis.addEventListener('voiceschanged',pickV);pickV()}catch(e){}
+function btn(on){const b=$('#rd');if(b){b.dataset.on=on?1:'';b.textContent=on?'⏹ Спри':'🔊 Чети ми'}}
+function note(m){const n=$('#vn');if(n){n.hidden=!m;if(m)n.textContent=m}}
+function webT(S,id){let i=0;const a=window._a||(window._a=new Audio());
+ const nx=()=>{if(id!=sp)return;if(i>=S.length)return btn(0);a.src='https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=bg&q='+encodeURIComponent(S[i++].slice(0,190));a.play().catch(er)},
+ er=()=>{if(id!=sp)return;btn(0);note('Не успях да пусна гласа. Провери звука на телефона (и дали не е на тих режим) и опитай пак.')};
+ a.onended=nx;a.onerror=er;nx()}
+function talk(t){const b=$('#rd');
+ if(b&&b.dataset.on){sp++;try{speechSynthesis.cancel();window._a&&window._a.pause()}catch(e){}return btn(0)}
+ const id=++sp,S=(t.match(/[^.!?]+[.!?]*/g)||[t]).map(x=>x.trim()).filter(Boolean);let st=0;note('');btn(1);
+ if(!window.speechSynthesis)return webT(S,id);
+ try{speechSynthesis.cancel()}catch(e){}
+ const has=pickV();if(has&&VB&&!/^bg/i.test(VB.lang))note('Телефонът няма български глас, затова се чете с близък глас.');
+ fbk=0;U=S.map((x,i)=>{const u=new SpeechSynthesisUtterance(x);u.lang='bg-BG';u.rate=.85;if(VB)u.voice=VB;
+  u.onstart=()=>{st=1};u.onend=()=>{if(i==S.length-1&&id==sp)btn(0)};
+  u.onerror=e=>{if(id!=sp||/cancel|interrupt/.test(e.error)||fbk)return;fbk=1;try{speechSynthesis.cancel()}catch(x){}note('');webT(S.slice(i),id)};return u});
+ U.forEach(u=>speechSynthesis.speak(u));
+ setTimeout(()=>{if(id==sp&&!st&&!fbk){fbk=1;try{speechSynthesis.cancel()}catch(x){}note('');webT(S,id)}},2500)}
+function conf(){for(let i=0;i<24;i++){const s=document.createElement('span');s.textContent=['⭐','🎉','🌹','🎈'][R(4)];s.style.cssText=`position:fixed;top:-30px;left:${R(95)}vw;font-size:${20+R(20)}px;z-index:20;pointer-events:none;transition:transform 2s ease-in,opacity 2s`;document.body.appendChild(s);requestAnimationFrame(()=>requestAnimationFrame(()=>{s.style.transform=`translateY(${innerHeight+60}px) rotate(${R(360)}deg)`;s.style.opacity=0}));setTimeout(()=>s.remove(),2200)}}
+const bad=b=>{b.classList.add('no');setTimeout(()=>b.classList.remove('no'),450)};
+const opts=a=>{const s=new Set([a]);while(s.size<3)s.add(1+R(9));return sh([...s])};
+
+function quiz(el,n,gen,done){let i=0;(function next(){const q=gen();
+ el.innerHTML=`${q.q}<div class=opts>${q.o.map(o=>`<button class=opt>${o}</button>`).join('')}</div><div class=dots>${'⭐'.repeat(i)}${'☆'.repeat(n-i)}</div>`;
+ el.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{if(+b.textContent==q.a){b.classList.add('ok');i++;setTimeout(()=>i>=n?done():next(),600)}else bad(b)})})()}
+
+const countG=(el,d)=>quiz(el,3,()=>{const a=1+R(6);return{a,o:opts(a),q:`<div class=q>${'🐎'.repeat(a)}</div>`}},d);
+const mathG=(el,d)=>quiz(el,3,()=>{const a=1+R(5),b=1+R(4);
+ return R(2)?{a:a+b,o:opts(a+b),q:`<div class=q>${'🚩'.repeat(a)} + ${'🚩'.repeat(b)}</div><div class=eq>${a} + ${b} = ?</div>`}
+ :{a,o:opts(a),q:`<div class=q>${'🚩'.repeat(a+b)}</div><div class=eq>${a+b} − ${b} = ?</div>`}},d);
+
+function letters(el,done){const L=['А','Б','В','Г','Д','Е'];let i=0;
+ el.innerHTML=`<div class=slots>${L.map(()=>'<span class=slot></span>').join('')}</div><div class=opts>${sh(L).map(l=>`<button class=opt>${l}</button>`).join('')}</div>`;
+ const sl=el.querySelectorAll('.slot');
+ el.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{if(b.textContent==L[i]){sl[i].textContent=L[i];sl[i].classList.add('ok');b.disabled=true;b.style.opacity=.25;if(++i==L.length)setTimeout(done,500)}else bad(b)})}
+
+const CR=[[20,85],[20,30],[50,60],[80,15],[110,60],[140,30],[140,85]],ST=[[80,6],[92,36],[124,38],[99,58],[107,89],[80,72],[53,89],[61,58],[36,38],[68,36]],
+dots=(el,done)=>dotsG(el,done,CR),starG=(el,done)=>dotsG(el,done,ST);
+function dotsG(el,done,P){let i=0,d='';
+ el.innerHTML=`<svg viewBox="0 0 160 100"><path id=cr fill="none" stroke="#d9423a" stroke-width="3" stroke-linejoin="round"/>${P.map((q,k)=>`<g data-k=${k} style="cursor:pointer"><circle cx=${q[0]} cy=${q[1]} r=12 fill="#fff0"/><circle class=c cx=${q[0]} cy=${q[1]} r=6 fill="#3b82c4"/><text x=${q[0]} y=${q[1]+3} font-size=8 text-anchor=middle fill="#fff" font-family="Arial" font-weight=700>${k+1}</text></g>`).join('')}</svg>`;
+ const gs=[...el.querySelectorAll('g')],cr=$('#cr',el);
+ const mark=()=>gs.forEach((g,k)=>g.firstElementChild.nextElementSibling.classList.toggle('nx',k==i));mark();
+ gs.forEach((g,k)=>g.onclick=()=>{if(k!=i)return;d+=(i?'L':'M')+P[k].join(' ')+' ';cr.setAttribute('d',d);gs[k].children[1].setAttribute('fill','#2e9d5b');i++;
+  if(i==P.length){cr.setAttribute('d',d+'Z');cr.setAttribute('fill','#f5b82e');setTimeout(done,700)}mark()})}
+
+function maze(el,done){const N=6,g=[...Array(N*N)].map(()=>[1,1,1,1]),seen=new Set([0]),st=[0],
+ D=[[0,-1,0,2],[1,0,1,3],[0,1,2,0],[-1,0,3,1]],M=[-N,1,N,-1];let pos=0;
+ while(st.length){const c=st[st.length-1],x=c%N,y=c/N|0,nb=D.filter(d=>{const a=x+d[0],b=y+d[1];return a>=0&&b>=0&&a<N&&b<N&&!seen.has(b*N+a)});
+  if(!nb.length){st.pop();continue}const d=nb[R(nb.length)],n=(y+d[1])*N+x+d[0];g[c][d[2]]=0;g[n][d[3]]=0;seen.add(n);st.push(n)}
+ el.innerHTML=`<div class=mz style="grid-template-columns:repeat(${N},1fr)"></div><div class=pad><i></i><button data-k=0>⬆️</button><i></i><button data-k=3>⬅️</button><button data-k=2>⬇️</button><button data-k=1>➡️</button></div>`;
+ const mz=$('.mz',el),draw=()=>{mz.innerHTML=g.map((w,c)=>`<div style="border-width:${w.map(v=>v?3:0).join('px ')}px">${c==pos?'🧒':c==N*N-1?'📖':''}</div>`).join('')},
+ mv=k=>{if(g[pos][k])return;pos+=M[k];draw();if(pos==N*N-1){document.onkeydown=null;setTimeout(done,500)}};
+ el.querySelectorAll('.pad button').forEach(b=>b.onclick=()=>mv(+b.dataset.k));
+ document.onkeydown=e=>{const k={ArrowUp:0,ArrowRight:1,ArrowDown:2,ArrowLeft:3}[e.key];if(k!=null){e.preventDefault();mv(k)}};draw()}
+
+function tunnel(el,done){let lane=1,coins=0,ob=[],t=0;
+ el.innerHTML=`<div class=tn><div class=ln></div><div class=ln></div><div class=ln></div><span class=pl>🧒</span></div><div class=dots></div><p>Докосни тунела горе или долу!</p>`;
+ const tn=$('.tn',el),pl=$('.pl',el),sc=$('.dots',el),put=()=>{pl.style.top=lane*33.33+'%';sc.textContent='🪙'.repeat(coins)+'⚪'.repeat(5-coins)};put();
+ tn.onpointerdown=e=>{const r=tn.getBoundingClientRect();lane=Math.min(2,Math.max(0,Math.floor((e.clientY-r.top)/r.height*3)));put()};
+ tm=setInterval(()=>{t++;if(t%32==0){const c=R(10)<7,s=document.createElement('span');s.className='it';s.textContent=c?'🪙':'🪨';ob.push({c,l:R(3),x:105,s});s.style.top=ob[ob.length-1].l*33.33+'%';tn.appendChild(s)}
+  ob.forEach(o=>{o.x-=.8;o.s.style.left=o.x+'%';if(o.x<17&&o.x>5&&o.l==lane&&!o.d){o.d=1;o.s.remove();if(o.c){coins++;put()}else{tn.classList.add('no');setTimeout(()=>tn.classList.remove('no'),400)}}if(o.x<-10)o.s.remove()});
+  if(coins>=5){clearInterval(tm);done()}},40)}
+
+function memory(el,done){const E=['🐎','🦁','🦅','🐕'];let a=null,ok=0,lock=0;
+ el.innerHTML=`<div class=opts>${sh([...E,...E]).map(e=>`<button class=opt data-e="${e}">❓</button>`).join('')}</div>`;
+ el.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{if(lock||b.disabled||b==a)return;b.textContent=b.dataset.e;if(!a){a=b;return}
+  if(a.dataset.e==b.dataset.e){a.classList.add('ok');b.classList.add('ok');a.disabled=b.disabled=true;a=null;if(++ok==4)setTimeout(done,600)}
+  else{lock=1;const x=a;a=null;setTimeout(()=>{x.textContent=b.textContent='❓';lock=0},800)}})}
+
+function pattern(el,done){let i=0;(function next(){const [A,B,K]=sh(['🔴','🟢','🟡','🔵']),T=[[A,B,A,B,A,B],[A,A,B,A,A,B],[A,B,K,A,B,K]][R(3)],a=T[5];
+ el.innerHTML=`<div class=q>${T.slice(0,5).join('')}❓</div><div class=opts>${sh([A,B,K]).map(x=>`<button class=opt>${x}</button>`).join('')}</div><div class=dots>${'⭐'.repeat(i)}${'☆'.repeat(3-i)}</div>`;
+ el.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{if(b.textContent==a){b.classList.add('ok');i++;setTimeout(()=>i>=3?done():next(),600)}else bad(b)})})()}
+
+function compare(el,done){let i=0;(function next(){let a=1+R(8),b=1+R(8);while(a==b)b=1+R(8);const E=['🌹','🌷'][R(2)];
+ el.innerHTML=`<div class=opts>${[a,b].map(n=>`<button class=opt style="width:46%;height:auto;min-height:90px;font-size:26px;word-break:break-all">${E.repeat(n)}</button>`).join('')}</div><div class=dots>${'⭐'.repeat(i)}${'☆'.repeat(3-i)}</div>`;
+ el.querySelectorAll('.opt').forEach((x,k)=>x.onclick=()=>{if((k==0)==(a>b)){x.classList.add('ok');i++;setTimeout(()=>i>=3?done():next(),600)}else bad(x)})})()}
+
+const C=[
+{y:'681 г.',t:'Хан Аспарух',e:'🏇',s:'Преди много, много години хан Аспарух и неговите българи преминали река Дунав. Така се родила държавата България!',h:'🦁 Помогни на Аспарух: колко са конете?',g:countG,f:'България е на повече от 1300 години. Тя е по-стара от много държави в Европа!'},
+{y:'около 705 г.',t:'Мадарският конник',e:'🗿',s:'В Мадара, високо в скалата, е изсечен голям конник. Около него има лъв, куче и орел. Вече повече от 1300 години той пази България!',h:'🦁 Намери двойките! Обърни две карти, за да видиш картинките.',g:memory,f:'Мадарският конник е изсечен високо в скала и е под закрилата на ЮНЕСКО.'},
+{y:'863 г.',t:'Кирил и Методий',e:'📜',s:'Двамата братя Кирил и Методий измислили буквите, с които пишем и днес. Затова имаме нашата азбука!',h:'🦁 Подреди буквите по реда им в азбуката!',g:letters,f:'Днешната азбука има 30 букви. А на 24 май празнуваме буквите и учителите!'},
+{y:'893 г.',t:'Цар Симеон Велики',e:'👑',s:'При цар Симеон България била голяма и богата. Това е Златният век, когато се пишели много книги.',h:'🦁 Свържи точките по номера и направи царската корона!',g:dots,f:'Преслав бил наричан Златния град, защото красиви украси блестели по палатите му.'},
+{y:'X век',t:'Рилският манастир',e:'⛰️',s:'Дълбоко в планината Рила живял добрият отшелник свети Иван Рилски. След него хората построили Рилския манастир, който пази българските книги и традиции.',h:'🦁 Какво идва след това? Продължи шарката от цветни кръгчета!',g:pattern,f:'Рилският манастир е в списъка на ЮНЕСКО. Арките му са на шарени райета: червено, бяло и черно.'},
+{y:'1185 г.',t:'Търново – столица',e:'🏰',s:'Братята Асен и Петър събрали смели българи и върнали свободата. Столица станал красивият град Търново с крепостта Царевец.',h:'🦁 Мини през тунела и събери 5 монети. Пази се от камъните!',g:tunnel,f:'Крепостта Царевец стои на хълм над река Янтра. Оттам цар Асен е гледал града!'},
+{y:'1762 г.',t:'Паисий Хилендарски',e:'🧙',s:'Монахът Паисий написал книга за миналото на българите, за да не го забравим. Тя събудила цял народ.',h:'🦁 Намери пътя през лабиринта до книгата!',g:maze,f:'Хората преписвали книгата на Паисий на ръка и си я четели на глас един на друг.'},
+{y:'1878 г.',t:'Свободна България',e:'🇧🇬',s:'Васил Левски мечтаел за свободна България. На 3 март 1878 година мечтата станала истина. Всяка година празнуваме този ден!',h:'🦁 Събери знамената и пресметни!',g:mathG,f:'На 3 март вдигаме знамето и си спомняме смелите хора, които са се борили за свободата.'},
+{y:'Всяка година',t:'Баба Марта и розите',e:'🌹',s:'На 1 март българите си подаряват мартеници, червени и бели, за здраве. А в Казанлък растат чудесни рози, от които правят ароматно масло.',h:'🦁 Къде има повече цветя? Докосни по-голямата купчинка!',g:compare,f:'Когато видим щъркел или лястовица, закачаме мартеницата на клон на цъфнало дърво.'},
+{y:'1979 г.',t:'Българин в космоса',e:'🚀',s:'През 1979 година Георги Иванов станал първият българин в космоса. Той летял с космически кораб около Земята и гледал нашата планета отгоре!',h:'🦁 Свържи точките по номера и нарисувай звезда!',g:starG,f:'Георги Иванов прекарал в космоса почти два дена.'}];
+
+function win(){conf();if(!dn[p]){dn[p]=1;stars++;}$('#st').textContent=stars;prog();
+ const w=$('#win');w.hidden=false;w.innerHTML=`<div style="font-size:64px">🎉</div>Браво! Ти получаваш ⭐<div class=fact>💡 Знаеше ли?<br>${C[p-1].f}</div><button class=btn id=nx>${p<C.length?'Напред ➜':'Към края 🏆'}</button>`;
+ $('#nx').onclick=()=>{p++;render()};w.scrollIntoView({behavior:'smooth',block:'center'})}
+function prog(){$('#pr').innerHTML=C.map((c,i)=>`<span class="${dn[i+1]?'d':''} ${p==i+1?'c':''}"></span>`).join('')}
+
+function render(){clearInterval(tm);document.onkeydown=null;sp++;try{speechSynthesis.cancel();window._a&&window._a.pause()}catch(e){}
+ $('#st').textContent=stars;prog();const m=$('#main');window.scrollTo(0,0);
+ if(p==0){m.innerHTML=`<section class=page><div class=flag></div><div class=big>🏰</div><h1>Заедно през вековете</h1><p>Книга-игра за малки откриватели</p><p>🦁 Здравей! Аз съм лъвчето Лъчо. Ела с мен на пътешествие във времето!</p><button class=btn id=go>Отвори книгата 📖</button><div class=flag></div></section>`;
+  $('#go').onclick=()=>{p=1;render()}}
+ else if(p>C.length){m.innerHTML=`<section class=page><div class=big>🏆</div><h1>Браво!</h1><div class=cert><h2>Млад пазител на историята</h2><p>Събра ${stars} от ${C.length} ⭐</p><div class=q>${'⭐'.repeat(stars)}</div></div><p>🦁 Пътувахме от 681 до 1979 година. Винаги помни: ние сме българи!</p><button class=btn id=ag>Започни отново 🔄</button></section>`;
+  $('#ag').onclick=()=>{p=0;stars=0;dn={};render()}}
+ else{const c=C[p-1];m.innerHTML=`<section class=page><div class=yr>${c.y}</div><div class=big>${c.e}</div><h2>${c.t}</h2><p>${c.s}</p><div class=task>${c.h}</div><div id=game></div><div id=win hidden></div></section>`;
+  void(c.t+'. '+c.s+' '+c.h.replace('🦁 ',''));c.g($('#game'),win)}}
+render();
+</script>
+</body>
+</html>
